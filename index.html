@@ -1,0 +1,295 @@
+<!doctype html>
+<html ⚡ lang="es">
+  <head>
+
+    <!-- Title -->
+    <title>Example</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Lato:300,500,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+  
+    <!-- meta charset -->
+    <meta charset="utf-8">
+
+    <!-- meta viewport -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+
+    <!-- Default styles for AMP -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <!-- AMP -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <!-- AMP Youtube -->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    
+    <!-- AMP Instagram -->
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+
+    <!-- AMP Twitter -->
+    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+
+    <style amp-custom>
+
+    /* Variables */
+    :root {
+        --color-dark:  #50514F;
+        --color-red: #F25F5C;
+        --color-yellow: #FFE066;
+        --color-blue: #247BA0;
+        --color-green: #70C1B3;
+
+        --color-facebook: #3b5998;
+        --color-twitter: #308EEF;
+        --color-googleplush: #dd4b39;
+    }
+
+    /* Elements */
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    /* Header */
+    .header,
+    .footer {
+        background-color: var(--color-blue);
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .header__logo .header__img,
+    .header__logo .header__text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header__logo .header__text .header__title {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 0 0.5rem;
+        font-weight: 300;
+    }
+
+    .cover{
+        background-image: url('./images/cover-mobile.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 3rem 1rem;
+    }
+
+    .cover .cover__title {
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .colors-line {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .colors-line .color {
+        width: 20%;
+        height: 7px;
+        float: left;
+    }
+
+    .color--dark {
+        background-color: var(--color-dark);
+    }
+
+    .color--red {
+        background-color: var(--color-red);
+    }
+
+    .color--yellow {
+        background-color: var(--color-yellow);
+    }
+
+    .color--blue {
+        background-color: var(--color-blue);
+    }
+
+    .color--green {
+        background-color: var(--color-green);
+    }
+    
+    .post-container {
+        padding: 0 0.5rem;
+    }
+
+    .post-container__social {
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .post-container_icon {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+        color: var(--color-red);
+    }
+
+    .post-container__text {
+        color: var(--color-dark);
+    }
+
+    .post-container__title {
+        color: var(--color-blue);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        border-bottom:  3px solid var(--color-blue);
+    }
+    .footer__text {
+        font-weight: 300;
+    }
+
+    .footer__link {
+        color: var(--color-yellow);
+        border-bottom: 1px dashed var(--color-yellow);
+
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <header class='header'>
+        <figure class='header__logo'>
+          <amp-img src='./images/fili.png' alt='Fili Santillan' height='45' width='45' class='header__img'></amp-img>
+          <figcaption class='header__text'>
+            <strong class='header__title'>Fili Santillán ⚡</strong>
+          </figcaption>
+      </figure>
+    </header>
+
+    <section class='cover'>
+        <h1 class='cover__title'> This is an AMP example page</h1>
+    </section>
+
+    <div class="colors-line">
+        <div class="color color--dark"></div>
+        <div class="color color--red"></div>
+        <div class="color color--yellow"></div>
+        <div class="color color--blue"></div>
+        <div class="color color--green"></div>
+    </div>
+
+    <main class='content'>
+        <article class="post-container">
+
+            <!-- Social Network -->
+            <div class="post-container__social">
+                <a href="#" class="post-container_icon fa fa-facebook"></a>
+                <a href="#" class="post-container_icon fa fa-twitter"></a>
+                <a href="#" class="post-container_icon fa fa-google-plus"></a>
+            </div>
+        
+            <!-- Text -->
+            <p class="post-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet quae quod laudantium, nobis facere quas, quis molestias ea error sit enim. Adipisci sapiente dolores nesciunt obcaecati similique eius quaerat.
+            </p>
+
+            <!-- Image example -->
+            <h2 class="post-container__title"> Image example</h2>
+            <amp-img
+                src='./images/nature.jpg'
+                alt='Fili Santillan'
+                layout='responsive'
+                height='300'
+                width='300'
+                class='header__img'>
+            </amp-img>
+
+            <!-- Text -->
+            <p class="post-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet quae quod laudantium, nobis facere quas, quis molestias ea error sit enim. Adipisci sapiente dolores nesciunt obcaecati similique eius quaerat.
+            </p>
+            
+            <!-- Youtube video example -->
+            <h2 class="post-container__title"> YouTube video example</h2>
+            <amp-youtube
+                data-videoid="mGENRKrdoGY"
+                layout="responsive"
+                width="300" height="200">
+            </amp-youtube>
+
+            <!-- Text -->
+            <p class="post-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet quae quod laudantium, nobis facere quas, quis molestias ea error sit enim. Adipisci sapiente dolores nesciunt obcaecati similique eius quaerat.
+            </p>
+            
+            <!-- Instagram image example -->
+            <h2 class="post-container__title"> Instagram image example</h2>
+            <amp-instagram
+                data-shortcode="BMK1ucXjJwi"
+                width="320"
+                height="392"
+                layout="responsive">
+            </amp-instagram>
+
+            <!-- Text -->
+            <p class="post-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet quae quod laudantium, nobis facere quas, quis molestias ea error sit enim. Adipisci sapiente dolores nesciunt obcaecati similique eius quaerat.
+            </p>
+
+            <!-- Tweet example -->
+            <h2 class="post-container__title"> Tweet example</h2>
+            <amp-twitter width="390" height="50"
+                layout="responsive"
+                data-tweetid="766696434313859072">
+            </amp-twitter>
+
+            <!-- Text -->
+            <p class="post-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet quae quod laudantium, nobis facere quas, quis molestias ea error sit enim. Adipisci sapiente dolores nesciunt obcaecati similique eius quaerat.
+            </p>
+
+
+
+        </article>
+
+        <footer class="footer">
+            <strong class='footer__text'>
+                Power by <a href='#' class='footer__link'>Fili Santillán</a>
+            </strong>
+        </footer>
+    </main>
+
+  </body>
+</html>
